@@ -2,7 +2,7 @@ let currentStep = 1;
 function nextStep(step) {
     let inputs;
     if (step === 1) {
-        inputs = document.getElementsByClassName('step1-field');
+        inputs = document.getElementsByClassName('step1-field-req');
         for (let inp of inputs) {
             if (inp.value === '') {
                 document.getElementById('error-msg').style.display = 'block';
@@ -11,7 +11,7 @@ function nextStep(step) {
         }
 
     } else if (step === 2) {
-        inputs = document.getElementsByClassName('step2-field');
+        inputs = document.getElementsByClassName('step2-field-req');
         let checkBox = document.getElementsByClassName('check-box-val');
         for (let inp of inputs) {
             if (inp.value === '') {
@@ -53,18 +53,3 @@ document.getElementById('submit-form').addEventListener('click', () => {
     document.getElementById('anjoman').submit()
 })
 
-let load = 0;
-document.getElementById('gform').onload = function () {
-    load++;
-    if (load > 1) {
-        document.location = "https://www.anjoman.bmtc.ac.ir/";
-    }
-}
-
-
-const backgroundVideo = document.getElementById('background-video');
-
-// Pause the video when it ends
-backgroundVideo.addEventListener('ended', () => {
-    backgroundVideo.pause();
-});

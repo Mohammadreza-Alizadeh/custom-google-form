@@ -31,12 +31,12 @@
                         <div class="step" id="step1">
                             <div class="mb-3 crtl">
                                 <label for="entry.2075432041" class="form-label">نام و نام خانوادگی</label>
-                                <input type="text" class="form-control step1-field" id="entry.2075432041"
+                                <input type="text" class="form-control step1-field step1-field-req" id="entry.2075432041"
                                     name="entry.2075432041" required>
                             </div>
                             <div class="mb-3 crtl">
                                 <label for="entry.1768093199" class="form-label">شماره تماس</label>
-                                <input type="text" class="form-control step1-field" id="entry.1768093199"
+                                <input type="text" class="form-control step1-field step1-field-req" id="entry.1768093199"
                                     name="entry.1768093199" required>
                             </div>
                             <div class="mb-3 crtl">
@@ -45,8 +45,8 @@
                                     required>
                             </div>
                             <div class="mb-3 crtl">
-                                <label for="entry.629266951" class="form-label">توضیحات درباره خودتان</label>
-                                <textarea class="form-control step1-field" required id="entry.629266951" name="entry.629266951"
+                                <label for="entry.629266951" class="form-label"> ( اختیاری ) توضیحات درباره خودتان</label>
+                                <textarea class="form-control step1-field" id="entry.629266951" name="entry.629266951"
                                     rows="4"></textarea>
                             </div>
                             <button type="button" class="btn btn-primary w-100" onclick="nextStep(1)">ادامه</button>
@@ -57,19 +57,14 @@
 
                             <div class="mb-3 crtl">
                                 <label for="entry.1845174953" class="form-label">رشته تحصیلی</label>
-                                <input type="text" class="form-control step2-field" id="entry.1845174953" name="entry.1845174953"
-                                    required>
-                            </div>
-                            <div class="mb-3 crtl">
-                                <label for="entry.855742399" class="form-label ">دانشگاه درحال تحصیل</label>
-                                <input type="text" class="form-control step2-field" id="entry.855742399" name="entry.855742399"
+                                <input type="text" class="form-control step2-field step2-field-req" id="entry.1845174953" name="entry.1845174953"
                                     required>
                             </div>
 
                             <div class="mb-3">
                                 <div class="crtl">
-                                    <label class="form-check-label mb-3">درچه حوضه هایی مایل به همکاری هستید
-                                        :</label>
+                                    <label class="form-check-label mb-3">درچه حوزه مایل به همکاری هستید :
+                                    </label>
                                 </div>
                                 <div class="form-check move-to-right">
                                     <input class="form-check-input check-box-val" type="checkbox" id="entry.903194722" value="مسابقات"
@@ -96,11 +91,7 @@
                                         value="گرافیک" name="entry.903194722">
                                     <label class="form-check-label" for="interest4">گرافیک</label>
                                 </div>
-                                <div class="form-check move-to-right">
-                                    <input class="form-check-input check-box-val" type="checkbox" id="entry.903194722"
-                                        value="کارآفرینی" name="entry.903194722">
-                                    <label class="form-check-label" for="interest4">کارآفرینی</label>
-                                </div>
+                               
                             </div>
                             <div class="text-center">
                                 <button type="button" class="btn mb-3 w-100 btn-primary" onclick="nextStep(2)">ادامه</button>
